@@ -1,0 +1,14 @@
+:root {
+  --ff-slabo-400: 'Slabo 13px', serif;
+  --ff-special-elite-400: 'Special Elite', cursive;
+
+  --clr-ruby-red: #a4161a;
+  --clr-blood-red: #660708;
+
+  --clr-white: #fff;
+  --clr-black: #000;
+}
+
+body {
+  font-family: var(--ff-slabo-400);
+}

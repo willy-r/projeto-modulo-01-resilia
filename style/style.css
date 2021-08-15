@@ -1,0 +1,20 @@
+/**
+ * General styles
+ */
+
+.btn {
+  display: inline-block;
+  padding: .4em .4em .25em;
+  font: 1.25rem /* 20px */ var(--ff-special-elite-400);
+  color: var(--clr-white);
+  background-color: var(--clr-ruby-red);
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px var(--clr-black);
+  transition: 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-blood-red);
+  transform: scale(1.03);
+}

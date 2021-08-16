@@ -19,6 +19,14 @@
   transform: scale(1.03);
 }
 
+.title {
+  padding-top: .125em;
+  font: 2.5rem /* 40px */ var(--ff-special-elite-400);
+  font-weight: 700;
+  text-align: center;
+  color: var(--clr-blood-red);
+}
+
 
 /**
  * Helpers

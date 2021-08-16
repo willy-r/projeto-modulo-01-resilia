@@ -1,5 +1,5 @@
 /**
- * General styles
+ * General styles that are used in every page.
  */
 
 .btn {
@@ -18,3 +18,10 @@
   background-color: var(--clr-blood-red);
   transform: scale(1.03);
 }
+
+
+/**
+ * Helpers
+ */
+
+.fade-in { opacity: 1; }

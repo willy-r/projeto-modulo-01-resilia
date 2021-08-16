@@ -11,4 +11,6 @@
 
 body {
   font-family: var(--ff-slabo-400);
+  transition: opacity 400ms ease-in;
+  opacity: 0;
 }

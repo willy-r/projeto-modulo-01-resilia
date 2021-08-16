@@ -18,18 +18,64 @@
 
     <!-- Local JS -->
     <script src="../../js/script.js"></script>
+    <script src="../../js/brad.js"></script>
   </head>
-  <body>
+  <body onload="bodyContentFadeIn();">
     <section>
       <h1 class="title">Fase 2</h1>
 
       <article class="conversation">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quo pariatur adipisci laborum eum excepturi perferendis
-        iusto! Corrupti culpa, doloremque nisi molestiae voluptate, maiores quibusdam omnis nam veniam magnam aliquid.
+        <p class="conversation__default">
+          Você decide enfrentar o desconhecido e junto com os Form, entra na casa demoníaca com armas em punho. Imediatamente a
+          porta atrás de vocês fecha. Vocês se deparam com o primeiro cômodo da casa, provavelmente a sala, fica um pouco confuso
+          saber qual o cômodo certo com tanta poeira e bagunça se acumulando por tanto tempo, você percebe que tem algo errado mas
+          não sabe exatamente o quê e decide deixar pra lá.
+        </p>
+
+        <p class="conversation__rosaria">
+          <strong class="conversation__name">[ROSARIA FORM]</strong>
+          <span class="conversation__dash">
+            Parece haver algum mal rondando este cômodo, eu consigo sentir, observando e esperando o momento certo para possuir
+            algum ser de alma fraca, tomem cuidado.
+          </span>
+        </p>
+        
+        <p class="conversation__default">
+          Rosaria segura firme a mão de John e vice-versa, ele sabe que ela provavelmente vai começara a ter visões e isso pode
+          não ser o momento mais propenso.
+        </p>
+
+        <p class="conversation__john">
+          <strong class="conversation__name">[JOHN FORM]</strong>
+          <span class="conversation__dash">
+            Tá tudo bem querida, eu estou com você. Brad, abaixe essa arma imediatamente, não perturbe o que não pode e não quer ser
+            perturbado, você não sabe com o que está brincando, e nem nós.
+          </span>
+        </p>
+
+        <p class="conversation__brad">
+          <strong class="conversation__name">[BRAD HAMILTON]</strong>
+          <span class="conversation__dash">
+            Sério? De novo com essa historinha? O que você tem contra a minha MATADORA DE FANTASMAS? Só porque eu posso acabar com o
+            nosso problema com uma bala enquanto você se segura nesse crucifixo em seu pescoço como se isso fosse te proteger de
+            algo? A melhor defesa é sempre o ataque!
+          </span>
+        </p>
+
+        <p class="conversation__default">
+          E Brad atira para um lado do cômodo sem motivo algum, como que para provocar John, com o seu egocentrismo cego.
+        </p>
+
+        <p class="conversation__john">
+          <strong class="conversation__name">[JOHN FORM]</strong>
+          <span class="conversation__dash">
+            BRAD! NÃO!!! O QUE VOCÊ FEZ? Solte essa arma agora!
+          </span>
+        </p>
       </article>
 
       <button class="btn" type="button"
-        onmouseover="playAudio('../../assets/audios/evil-laugh.mp3');"
+        onclick="handleBradSecondPhaseChoice();"
       >
         Faça sua escolha!
       </button>

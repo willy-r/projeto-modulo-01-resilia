@@ -18,8 +18,9 @@
 
     <!-- Local JS -->
     <script src="../../js/script.js"></script>
+    <script src="../../js/brad.js"></script>
   </head>
-  <body>
+  <body onload="bodyContentFadeIn();">
     <section>
       <h1 class="title">Fase 1</h1>
 
@@ -34,7 +35,7 @@
         </p>
 
         <p class="conversation__default">
-          Rosaria lança seu olhar característico para John e John automaticamente entende o significado daquilo, sabendo que bem
+          Rosaria lança seu olhar característico para John, e John automaticamente entende o significado daquilo, sabendo que bem
           provavelmente se uma pessoa que não possui a fé necessária para enfrentar o mal ficasse para trás, o mal possuiria essa
           pessoa e isso não era o que eles queriam.
           <br>
@@ -86,7 +87,7 @@
       </article>
 
       <button class="btn" type="button"
-        onclick="playAudio('../../assets/audios/evil-laugh.mp3'); handleChoice();"
+        onclick="handleBradFirstPhaseChoice();"
       >
         Faça sua escolha!
       </button>

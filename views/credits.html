@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Créditos | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- Local JS -->
+    <script src="../js/script.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <section>
+      <h1 class="title">Créditos</h1>
+      
+      <div class="text-wrapper" id="nun-img">
+        <p class="text-wrapper__content">
+          História totalmente fictícia retirada das profundezas da mente de <a href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank" rel="noreferrer noopener external">William Rodrigues</a>, baseada nos filmes da franquia <a href="https://pt.wikipedia.org/wiki/The_Conjuring" target="_blank" rel="noreferrer noopener external"><q>Invocação do Mal</q></a>.
+        </p>
+        <p class="text-wrapper__content">
+          Todas as imagens/vídeos/áudios são retirados dos filmes, então todos os direitos vão para a <a href="https://pt.wikipedia.org/wiki/New_Line_Cinema" target="_blank" rel="noreferrer noopener external">New Line Cinema</a>.
+        </p>
+        <p class="text-wrapper__content">
+          Site construído para fins didáticos, para o final do módulo 01 do curso de desenvolvimento web da Resilia, utilizando somente HTML, CSS e JavaScript.
+        </p>
+      </div> <!-- .text-wrapper -->
+
+      <button class="btn" type="button"
+        onclick="displayNunImage();
+                 playAudio('../assets/audios/evil-laugh.mp3');
+                 redirectAfterTimeout(5800, '../index.html');"
+      >
+        Jogar novamente
+      </button>
+    </section>
+  </body>
+</html>

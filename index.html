@@ -15,11 +15,19 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- Local JS -->
+    <script src="js/script.js"></script>
   </head>
-  <body>
+  <body onload="bodyContentFadeIn();">
     <section>
       <h1 class="title">Invocação do Mal: A Possessão de Valak</h1>
-      <a class="btn" href="views/introduction.html">Começar</a>
+      <button class="btn" type="button"
+        onclick="playAudio('assets/audios/evil-laugh.mp3');
+                 redirectAfterTimeout(5800, 'views/introduction.html');"
+      >
+        Começar
+      </button>
     </section>
   </body>
 </html>

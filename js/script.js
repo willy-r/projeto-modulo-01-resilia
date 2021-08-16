@@ -51,13 +51,13 @@ function redirect(page) {
  * Plays an audio on the page.
  * 
  * @param {string} audioPath A relative path to the audio path, related to the HTML page that's calling the function.
+ * @param {number} volume A number between 0 and 1, where 0 means muted and 1 completly audible. 
  */
-function playAudio(audioPath) {
+function playAudio(audioPath, volume=0.5) {
   const audio = new Audio(audioPath);
 
   audio.addEventListener('canplaythrough', () => {
-    audio.volume = 0.5;
-    console.log(audio.volume);
+    audio.volume = volume;
     audio.play();
   });
 }

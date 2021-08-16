@@ -28,10 +28,21 @@ function redirectOnChoice(message, firstPage, secondPage) {
   }
 }
 
+/**
+ * Redirects the user to a page, after a predefined time in miliseconds.
+ * 
+ * @param {number} time Time in miliseconds to redirects the user.
+ * @param {string} page A relative path to a page.
+ */
 function redirectAfterTimeout(time, page) {
   setTimeout(() => redirect(page), time);
 }
 
+/**
+ * Redirects the user to a page.
+ * 
+ * @param {string} page A relative path to a page.
+ */
 function redirect(page) {
   location.replace(page);
 }
@@ -51,6 +62,7 @@ function playAudio(audioPath) {
   });
 }
 
+/** Creates an fade in effect in the body content. */
 function bodyContentFadeIn() {
   document.body.classList.add('fade-in');
 }

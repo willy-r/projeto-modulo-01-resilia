@@ -68,7 +68,8 @@ function bodyContentFadeIn() {
 }
 
 function displayNunImage() {
-  const divCredits = document.querySelector('#nun-img');
+  const divCredits = document.querySelector('.text-wrapper#nun-img');
 
-  divCredits.innerHTML = '<img src="../assets/images/the-nun.jpg" alt="Imagem da Freira">';
+  divCredits.innerHTML = '<img src="../assets/images/the-nun-gif.gif" alt="Gif da cena de Invocação do Mal 2 da Freira">';
+  divCredits.style.width = '100%';
 }

@@ -34,6 +34,12 @@ body { line-height: 1; }
 *::before,
 *::after { box-sizing: border-box; }
 
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
 button {
   padding: 0;
   font: inherit;
@@ -44,4 +50,9 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+hr {
+  margin: 0;
+  border: none;
 }

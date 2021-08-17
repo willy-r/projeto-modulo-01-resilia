@@ -2,6 +2,23 @@
  * General styles that are used in every page.
  */
 
+ .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: var(--padding-30) 2.5rem;
+  gap: calc(2 * var(--gap-10));
+  background-color: var(--clr-black-film);
+}
+
+.container.container--center {
+  min-height: 100vh;
+  justify-content: center;
+}
+
 .btn {
   display: inline-block;
   padding: .4em .4em .25em;
@@ -19,12 +36,107 @@
   transform: scale(1.03);
 }
 
+.btn.btn--large { font-size: 30px; }
+
 .title {
   padding-top: .125em;
   font: 2.5rem /* 40px */ var(--ff-special-elite-400);
   font-weight: 700;
   text-align: center;
   color: var(--clr-blood-red);
+  text-shadow: 0 0 2px var(--clr-white);
+}
+
+.title.title--small { font-size: 1.25rem; /* 20px */ }
+
+.title.title--game {
+  font-size: 3rem; /* 48px */
+  line-height: 1em;
+}
+
+.box {
+  padding: var(--padding-30);
+  gap: calc(2 * var(--gap-10));
+  background-color: var(--clr-eerie-black-bgc);
+  box-shadow: 0 0 2px 1px var(--clr-black);
+}
+
+
+/**
+ * Index page
+ */
+
+.main-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/**
+ * Introduction and credits pages
+ */
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.text-wrapper__content {
+  font-size: 1rem; /* 16px */
+  line-height: 1.1em;
+}
+
+.text-wrapper__content:first-child::first-letter {
+  margin-right: .02em;
+  float: left;
+  font-size: 3em; /* 48px */
+  font-weight: 700;
+}
+
+.text-wrapper__content a {
+  color: var(--clr-imperial-red);
+  transition: 250ms ease-in;
+}
+
+.text-wrapper__content a:hover,
+.text-wrapper__content a:focus { color: var(--clr-ruby-red); }
+
+
+/**
+ * Characters page
+ */
+
+.chars-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.chars-wrapper__char {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+  padding: var(--gap-10);
+  width: var(--w-250);
+  border: 1px solid var(--clr-light-gray);
+}
+
+.chars-wrapper__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  gap: var(--gap-10);
+}
+
+.chars-wrapper__content p {
+  margin-top: .36em;
+  font-size: .875rem; /* 14px */
+  line-height: 1.1em;
 }
 
 
@@ -33,3 +145,8 @@
  */
 
 .fade-in { opacity: 1; }
+
+.center {
+  display: flex;
+  justify-content: center;
+}

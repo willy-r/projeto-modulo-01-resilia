@@ -20,28 +20,34 @@
     <script src="../js/script.js"></script>
   </head>
   <body onload="bodyContentFadeIn();">
-    <section>
-      <h1 class="title">Créditos</h1>
+    <div class="container container--center">
+      <header>
+        <h1 class="title">Créditos</h1>
+      </header>
       
-      <div class="text-wrapper" id="nun-img">
-        <p class="text-wrapper__content">
-          História totalmente fictícia retirada das profundezas da mente de <a href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank" rel="noreferrer noopener external">William Rodrigues</a>, baseada nos filmes da franquia <a href="https://pt.wikipedia.org/wiki/The_Conjuring" target="_blank" rel="noreferrer noopener external"><q>Invocação do Mal</q></a>.
-        </p>
-        <p class="text-wrapper__content">
-          Todas as imagens/vídeos/áudios são retirados dos filmes, então todos os direitos vão para a <a href="https://pt.wikipedia.org/wiki/New_Line_Cinema" target="_blank" rel="noreferrer noopener external">New Line Cinema</a>.
-        </p>
-        <p class="text-wrapper__content">
-          Site construído para fins didáticos, para o final do módulo 01 do curso de desenvolvimento web da Resilia, utilizando somente HTML, CSS e JavaScript.
-        </p>
-      </div> <!-- .text-wrapper -->
+      <main class="center">
+        <section class="text-wrapper box" id="nun-img">
+          <p class="text-wrapper__content">
+            História totalmente fictícia retirada das profundezas da mente de <a href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank" rel="noreferrer noopener external">William Rodrigues</a>, baseada nos filmes da franquia <a href="https://pt.wikipedia.org/wiki/The_Conjuring" target="_blank" rel="noreferrer noopener external"><q>Invocação do Mal</q></a>.
+          </p>
 
-      <button class="btn" type="button"
-        onclick="displayNunImage();
-                 playAudio('../assets/audios/evil-laugh.mp3');
-                 redirectAfterTimeout(5800, '../index.html');"
-      >
-        Jogar novamente
-      </button>
-    </section>
+          <p class="text-wrapper__content">
+            Todas as imagens/vídeos/áudios são retirados dos filmes, então todos os direitos vão para a <a href="https://pt.wikipedia.org/wiki/New_Line_Cinema" target="_blank" rel="noreferrer noopener external">New Line Cinema</a>.
+          </p>
+
+          <p class="text-wrapper__content">
+            Site construído para fins didáticos, para o final do módulo 01 do curso de desenvolvimento web da Resilia, utilizando somente HTML, CSS e JavaScript.
+          </p>
+          <hr>
+          <button class="btn btn--large" type="button"
+            onclick="displayNunImage();
+                     playAudio('../assets/audios/the-nun-scream.mp3', 1);
+                     redirectAfterTimeout(3000, '../index.html');"
+          >
+            Jogar novamente
+          </button>
+        </section> <!-- .text-wrapper -->
+      </main>
+    </div>
   </body>
 </html>

@@ -61,6 +61,25 @@
   box-shadow: 0 0 2px 1px var(--clr-black);
 }
 
+.gameover {
+  display: inline-block;
+  padding: var(--padding-30);
+  font: 3rem /* 48px */ var(--ff-special-elite-400);
+  font-weight: 700;
+  color: var(--clr-ruby-red);
+  line-height: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px var(--clr-black);
+  background-color: var(--clr-light-gray);
+  box-shadow: 5px 5px 3px var(--clr-black);
+  border: 5px solid var(--clr-ruby-red);
+  transform: rotate(-20deg);
+  transition: 300ms cubic-bezier(.3,-1.1,.96,2.53);
+}
+
+.gameover:hover { transform: scale(1.5); }
+
 
 /**
  * Index page

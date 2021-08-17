@@ -22,7 +22,7 @@
   </head>
   <body onload="bodyContentFadeIn();">
     <section>
-      <article class="conversation">
+      <article class="conversation box">
         <p class="conversation__default">
           Você decide ficar pelos arredores da casa, agora que a chuva decidiu cessar, ao lado da viatura que o levou até ali, com
           o pisca alerta aceso enquanto vê o casal Form adentrando a casa. Após algum tempo de silêncio e sem grandes novidades,
@@ -47,26 +47,26 @@
             Enfim uma alma sem fé disposta a me servir...
           </span>
         </p>
+
+        <p class="gameover">
+          Game<br>over
+        </p>
+        <hr>
+        <div class="buttons">
+          <button class="btn" type="button"
+            onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                     redirectAfterTimeout(5800, 'first-phase.html');"
+          >
+            Jogar novamente
+          </button>
+          <button class="btn" type="button"
+            onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                     redirectAfterTimeout(5800, '../characters.html');"
+          >
+            Voltar para o início
+          </button>
+        </div>
       </article>
-
-      <p class="gameover">
-        Game over
-      </p>
-
-      <div class="buttons">
-        <button class="btn" type="button"
-          onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                   redirectAfterTimeout(5800, 'first-phase.html');"
-        >
-          Jogar novamente
-        </button>
-        <button class="btn" type="button"
-          onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                   redirectAfterTimeout(5800, '../characters.html');"
-        >
-          Voltar para o início
-        </button>
-      </div>
     </section>
   </body>
 </html>

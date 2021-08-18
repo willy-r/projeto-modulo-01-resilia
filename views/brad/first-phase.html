@@ -21,76 +21,80 @@
     <script src="../../js/brad.js"></script>
   </head>
   <body onload="bodyContentFadeIn();">
-    <section>
-      <h1 class="title">Fase 1</h1>
-
-      <article class="conversation">
-        <p class="conversation__brad">
-          <strong class="conversation__name">[BRAD HAMILTON]</strong>
-          <span class="conversation__dash">
-            É sério que a gente vai ter que entrar aí mesmo? Não que eu esteja com medo e acredite nas baboseiras ditas sobre essa
-            maldita casa... Mas e se existisse a mínima possibilidade de talvez vocês adentrarem a casa juntos e eu ficar aqui fora
-            cuidando da retaguarda, o que vocês acham?
-          </span>
-        </p>
-
-        <p class="conversation__default">
-          Rosaria lança seu olhar característico para John, e John automaticamente entende o significado daquilo, sabendo que bem
-          provavelmente se uma pessoa que não possui a fé necessária para enfrentar o mal ficasse para trás, o mal possuiria essa
-          pessoa e isso não era o que eles queriam.
-          <br>
-          Mas ainda assim, sem conhecer nada sobre o Brad, se ele não quisesse entrar, essa escolha seria totalmente dele, e os
-          Form gostavam de trabalhar sozinhos.
-        </p>
-
-        <p class="conversation__rosaria">
-          <strong class="conversation__name">[ROSARIA FORM]</strong>
-          <span class="conversation__dash">
-            Essa pergunta quem tem que responder é você senhor policial...
-          </span>
-        </p>
-
-        <p class="conversation__brad">
-          <strong class="conversation__name">[BRAD HAMILTON]</strong>
-          <span class="conversation__dash">
-            Ah desculpe, meu nome é Brad Hamilton e trabalho no departamento de policia de Harrisville, fui mandado aqui para
-            acompanhar vocês nessa "aventura", e eu já conheço vocês, os famosos Form...
-          </span>
-        </p>
-
-        <p class="conversation__rosaria">
-          <strong class="conversation__name">[ROSARIA FORM]</strong>
-          <span class="conversation__dash">
-            Que bom, isso poupa apresentações desnecessárias. A questão aqui é: quanta fé você tem para querer ficar aqui fora
-            sozinho sabendo das histórias sobre este lugar?
-          </span>
-        </p>
-
-        <p class="conversation__brad">
-          <strong class="conversation__name">[BRAD HAMILTON]</strong>
-          <span class="conversation__dash">
-            Essas histórias? Tudo baboseira, inclusive estarei muito bem acompanhado com a minha <q>matadora de fantasmas</q>, vulgo
-            minha .40.
-          </span>
-        </p>
-
-        <p class="conversation__default">
-          Brad dá uma batidinha no cinto coldre de sua arma e deixa suas duas mãos por lá.
-        </p>
-
-        <p class="conversation__john">
-          <strong class="conversation__name">[JOHN FORM]</strong>
-          <span class="conversation__dash">
-            Tudo bem então valentão, só nos diga: você deseja entrar ou vai ficar aqui fora com a sua fútil companheira?
-          </span>
-        </p>
-      </article>
-
-      <button class="btn" type="button"
-        onclick="handleBradFirstPhaseChoice();"
-      >
-        Faça sua escolha!
-      </button>
-    </section>
+    <div class="container">
+      <header>
+        <h1 class="title">Fase 1</h1>
+      </header>
+      
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation conversation--brad">
+            <strong class="conversation__name">[BRAD HAMILTON]</strong>
+            <span class="conversation__dash">
+              É sério que a gente vai ter que entrar aí mesmo? Não que eu esteja com medo e acredite nas baboseiras ditas sobre essa
+              maldita casa... Mas e se existisse a mínima possibilidade de talvez vocês adentrarem a casa juntos e eu ficar aqui fora
+              cuidando da retaguarda, o que vocês acham?
+            </span>
+          </p>
+  
+          <p class="conversation">
+            Rosaria lança seu olhar característico para John, e John automaticamente entende o significado daquilo, sabendo que bem
+            provavelmente se uma pessoa que não possui a fé necessária para enfrentar o mal ficasse para trás, o mal possuiria essa
+            pessoa e isso não era o que eles queriam.
+            <br>
+            Mas ainda assim, sem conhecer nada sobre o Brad, se ele não quisesse entrar, essa escolha seria totalmente dele, e os
+            Form gostavam de trabalhar sozinhos.
+          </p>
+  
+          <p class="conversation conversation--rosaria">
+            <strong class="conversation__name">[ROSARIA FORM]</strong>
+            <span class="conversation__dash">
+              Essa pergunta quem tem que responder é você senhor policial...
+            </span>
+          </p>
+  
+          <p class="conversation conversation--brad">
+            <strong class="conversation__name">[BRAD HAMILTON]</strong>
+            <span class="conversation__dash">
+              Ah desculpe, meu nome é Brad Hamilton e trabalho no departamento de policia de Harrisville, fui mandado aqui para
+              acompanhar vocês nessa "aventura", e eu já conheço vocês, os famosos Form...
+            </span>
+          </p>
+  
+          <p class="conversation conversation--rosaria">
+            <strong class="conversation__name">[ROSARIA FORM]</strong>
+            <span class="conversation__dash">
+              Que bom, isso poupa apresentações desnecessárias. A questão aqui é: quanta fé você tem para querer ficar aqui fora
+              sozinho sabendo das histórias sobre este lugar?
+            </span>
+          </p>
+  
+          <p class="conversation conversation--brad">
+            <strong class="conversation__name">[BRAD HAMILTON]</strong>
+            <span class="conversation__dash">
+              Essas histórias? Tudo baboseira, inclusive estarei muito bem acompanhado com a minha <q>matadora de fantasmas</q>, vulgo
+              minha .40.
+            </span>
+          </p>
+  
+          <p class="conversation">
+            Brad dá uma batidinha no cinto coldre de sua arma e deixa suas duas mãos por lá.
+          </p>
+  
+          <p class="conversation conversation--john">
+            <strong class="conversation__name">[JOHN FORM]</strong>
+            <span class="conversation__dash">
+              Tudo bem então valentão, só nos diga: você deseja entrar ou vai ficar aqui fora com a sua fútil companheira?
+            </span>
+          </p>
+          <hr>
+          <button class="btn" type="button"
+            onclick="handleBradFirstPhaseChoice();"
+          >
+            Faça sua escolha!
+          </button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

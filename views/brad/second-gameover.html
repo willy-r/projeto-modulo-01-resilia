@@ -21,47 +21,49 @@
     <script src="../../js/brad.js"></script>
   </head>
   <body onload="bodyContentFadeIn();">
-    <section>
-      <article class="conversation">
-        <p class="conversation__default">
-          Você quer continuar segurando a matadora de fantasmas, desafiando seja lá o que está ali, até porque nada aconteceu até
-          agora, e com esse pensamento atira mais uma vez e para cima. John Form tenta correr pra cima de você para retirar a arma
-          de sua mão, mas algo acontece com Rosaria e ele volta imediatamente a atenção para ela. Ela parece ter desmaiado mas
-          John diz que é algo que acontece quando ela tem visões de possíveis demônios e almas que estão por perto.
-        </p>
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Você quer continuar segurando a matadora de fantasmas, desafiando seja lá o que está ali, até porque nada aconteceu até
+            agora, e com esse pensamento atira mais uma vez e para cima. John Form tenta correr pra cima de você para retirar a arma
+            de sua mão, mas algo acontece com Rosaria e ele volta imediatamente a atenção para ela. Ela parece ter desmaiado mas
+            John diz que é algo que acontece quando ela tem visões de possíveis demônios e almas que estão por perto.
+          </p>
+  
+          <p class="conversation">
+            Sabendo disso você imediatamente percebe que pode ter feito algo de muito errado, e antes que você tente guardar a arma
+            e consertar sua burrada, você é possuído pelo demônio <strong>Valak</strong>, foi um sentimento tão incerto e tão rápido que você só
+            consegue ouvir ao fundo uma voz, antes de desmaiar completamente:
+          </p>
+  
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Uma alma sem fé e burra, perfeito para um servo obediente.
+            </span>
+          </p>
 
-        <p class="conversation__default">
-          Sabendo disso você imediatamente percebe que pode ter feito algo de muito errado, e antes que você tente guardar a arma
-          e consertar sua burrada, você é possuído pelo demônio <strong>Valak</strong>, foi um sentimento tão incerto e tão rápido que você só
-          consegue ouvir ao fundo uma voz, antes de desmaiar completamente:
-        </p>
-
-        <p class="conversation__valak">
-          <strong class="conversation__name">[VALAK]</strong>
-          <span class="conversation__dash">
-            Uma alma sem fé e burra, perfeito para um servo obediente.
-          </span>
-        </p>
-      </article>
-
-      <p class="gameover">
-        Game over
-      </p>
-
-      <div class="buttons">
-        <button class="btn" type="button"
-          onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                   redirectAfterTimeout(5800, 'second-phase.html');"
-        >
-          Jogar novamente
-        </button>
-        <button class="btn" type="button"
-          onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                   redirectAfterTimeout(5800, '../characters.html');"
-        >
-          Voltar para o início
-        </button>
-      </div>
-    </section>
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'second-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

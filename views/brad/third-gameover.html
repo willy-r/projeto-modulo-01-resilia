@@ -21,51 +21,54 @@
     <script src="../../js/brad.js"></script>
   </head>
   <body onload="bodyContentFadeIn();">
-    <section>
-      <article class="conversation">
-        <p class="conversation__default">
-          Você corre para a porta de entrada da casa e ela está trancada, você a força para o seu lado puxando com toda força e
-          ela abre. Você se encontra do lado de fora da casa e a chuva parou. Você note que John e Rosaria estão correndo e
-          gritando seu nome, porém assim que eles chegam na porta, ela é fechada novamente e você se encontra sozinho do lado de
-          fora da casa.
-        </p>
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Você corre para a porta de entrada da casa e ela está trancada, você a força para o seu lado puxando com toda força e
+            ela abre. Você se encontra do lado de fora da casa e a chuva parou. Você note que John e Rosaria estão correndo e
+            gritando seu nome, porém assim que eles chegam na porta, ela é fechada novamente e você se encontra sozinho do lado de
+            fora da casa.
+          </p>
+  
+          <p class="conversation">
+            De repente a sirene da viatura que está ali estacionada é acionada e o carro engata a primeira partindo pra cima de
+            você, porém ninguém estava dirigindo o carro. Você consegue pular mas não o suficiente, a viatura o atinge e esmaga você
+            contra a árvore mais próxima. Ainda tentando resistir e cuspindo sangue, você se depara com a visão turva de um ser
+            extremamente horrendo, com chifres e uma boca cheia de dentes anormal, que pula para cima de você, mas nada acontece.
+            <br>
+            Com sua visão turva e mais nada para o que se fazer, você dá seus últimos suspiros e consegue ouvir ao longe a voz de
+            Rosaria e John gritando desesperadamente, olhando aquilo tudo pela janela. Você fica inconsciente e quase que
+            imediatamente, em seu subconsciente, você ouve a voz do mal, Valak, o demônio que assombra aquela casa.
+          </p>
+  
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Apenas tolo e burro, e agora nem isso, morto. Um alvo perfeito para completar a maldição sem a estupida tentativa de se libertar, apenas entregue como um belo presente para mim, e só para mim!
+            </span>
+          </p>
 
-        <p class="conversation__default">
-          De repente a sirene da viatura que está ali estacionada é acionada e o carro engata a primeira partindo pra cima de
-          você, porém ninguém estava dirigindo o carro. Você consegue pular mas não o suficiente, a viatura o atinge e esmaga você
-          contra a árvore mais próxima. Ainda tentando resistir e cuspindo sangue, você se depara com a visão turva de um ser
-          extremamente horrendo, com chifres e uma boca cheia de dentes anormal, que pula para cima de você, mas nada acontece.
-          Com sua visão turva e mais nada para o que se fazer, você dá seus últimos suspiros e consegue ouvir ao longe a voz de
-          Rosaria e John gritando desesperadamente, olhando aquilo tudo pela janela. Você fica inconsciente e quase que
-          imediatamente, em seu subconsciente, você ouve a voz do mal, Valak, o demônio que assombra aquela casa.
-        </p>
-
-        <p class="conversation__valak">
-          <strong class="conversation__name">[VALAK]</strong>
-          <span class="conversation__dash">
-            Apenas tolo e burro, e agora nem isso, morto. Um alvo perfeito para completar a maldição sem a estupida tentativa de se libertar, apenas entregue como um belo presente para mim, e só para mim!
-          </span>
-        </p>
-      </article>
-
-      <p class="gameover">
-        Game over
-      </p>
-
-      <div class="buttons">
-        <button class="btn" type="button"
-          onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                   redirectAfterTimeout(5800, 'third-phase.html');"
-        >
-          Jogar novamente
-        </button>
-        <button class="btn" type="button"
-          onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                   redirectAfterTimeout(5800, '../characters.html');"
-        >
-          Voltar para o início
-        </button>
-      </div>
-    </section>
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'third-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

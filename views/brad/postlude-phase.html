@@ -21,51 +21,55 @@
     <script src="../../js/brad.js"></script>
   </head>
   <body onload="bodyContentFadeIn();">
-    <section>
-      <h1 class="title">Poslúdio</h1>
+    <div class="container">
+      <header>
+        <h1 class="title">Poslúdio</h1>
+      </header>
 
-      <article class="conversation">
-        <p class="conversation__default">
-          Você corre para a porta mais próxima, desesperado o que você acabou de ver e ouvir, quase morrendo no processo. Ela está
-          à direita de você e imediatamente após você entrar, ela é trancada com um estrondo gigantesco e atrás vozes gritando seu
-          nome, provavelmente Rosaria e John.
-        </p>
-
-        <p class="conversation__default">
-          Você se encontra num quarto cheio de cruzes penduradas nas paredes, porém essas cruzes estão de cabeça para baixo.
-          A atmosfera ali é densa e você nota que existem algumas letras <strong>"A"s</strong> escritas nas paredes com sangue. Aquilo com certeza
-          não é bom, e você não consegue sair dali de forma alguma.
-        </p>
-
-        <p class="conversation__default">
-          Aquela sensação de frio novamente o toma de surpresa, e de repente um demônio num formato horrendo sai de um canto que
-          estava escuro do cômodo, ele vem para cima de você meio que voando e com a mão aberta e você não tem nenhuma reação,
-          além de colocar as mãos para proteger o rosto e fechar os olhos. Nada acontece e você abre os olhos. Uma ilusão?
-        </p>
-
-        <p class="conversation__default">
-          Você começa a se sentir repentinamente zonzo, com uma sensação de vômito e do nada marcas roxas de dedos começam a
-          surgir em seus pulsos, e uma sensação estranha de não estar conseguindo respirar, mesmo estando. Valak se rebela e
-          assume o controle do seu corpo e de todas as ações que você vai tomar a partir daqui. Sua mente está acordada mas não há
-          nada que você possa fazer além de respeitar as vontades daquele ser vil.
-        </p>
-        
-        <p class="conversation__valak">
-          <strong class="conversation__name">[VALAK]</strong>
-          <span class="conversation__dash">
-            Vamos meu fiel súdito, finja ser o que você não é e mate aqueles que tentam usurpar o meu lugar de direito, aquele
-            casalzinho que pensa que pode me deter com suas orações e águas bentas. Esperaremos o momento certo para se revelar e
-            mataremos ambos!
-          </span>
-        </p>
-      </article>
-
-      <button class="btn" type="button"
-        onclick="playAudio('../../assets/audios/evil-laugh.mp3');
-                 redirectAfterTimeout(5800, 'final-phase.html');"
-      >
-        Continuar
-      </button>
-    </section>
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Você corre para a porta mais próxima, desesperado o que você acabou de ver e ouvir, quase morrendo no processo. Ela está
+            à direita de você e imediatamente após você entrar, ela é trancada com um estrondo gigantesco e atrás vozes gritando seu
+            nome, provavelmente Rosaria e John.
+          </p>
+  
+          <p class="conversation">
+            Você se encontra num quarto cheio de cruzes penduradas nas paredes, porém essas cruzes estão de cabeça para baixo.
+            A atmosfera ali é densa e você nota que existem algumas letras <strong>"A"s</strong> escritas nas paredes com sangue. Aquilo com certeza
+            não é bom, e você não consegue sair dali de forma alguma.
+          </p>
+  
+          <p class="conversation">
+            Aquela sensação de frio novamente o toma de surpresa, e de repente um demônio num formato horrendo sai de um canto que
+            estava escuro do cômodo, ele vem para cima de você meio que voando e com a mão aberta e você não tem nenhuma reação,
+            além de colocar as mãos para proteger o rosto e fechar os olhos. Nada acontece e você abre os olhos. Uma ilusão?
+          </p>
+  
+          <p class="conversation">
+            Você começa a se sentir repentinamente zonzo, com uma sensação de vômito e do nada marcas roxas de dedos começam a
+            surgir em seus pulsos, e uma sensação estranha de não estar conseguindo respirar, mesmo estando. Valak se rebela e
+            assume o controle do seu corpo e de todas as ações que você vai tomar a partir daqui. Sua mente está acordada mas não há
+            nada que você possa fazer além de respeitar as vontades daquele ser vil.
+          </p>
+          
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Vamos meu fiel súdito, finja ser o que você não é e mate aqueles que tentam usurpar o meu lugar de direito, aquele
+              casalzinho que pensa que pode me deter com suas orações e águas bentas. Esperaremos o momento certo para se revelar e
+              mataremos ambos!
+            </span>
+          </p>
+          <hr>
+          <button class="btn" type="button"
+            onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                     redirectAfterTimeout(5800, 'final-phase.html');"
+          >
+            Continuar
+          </button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

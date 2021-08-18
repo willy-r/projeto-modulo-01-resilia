@@ -82,6 +82,12 @@
   width: 70%;
 }
 
+.text-wrapper > .gameover {
+  align-self: center;
+  margin-top: .625em;
+  margin-bottom: .625em;
+}
+
 .text-wrapper__content {
   font-size: 1rem; /* 16px */
   line-height: 1.1em;
@@ -102,12 +108,35 @@
 .text-wrapper__content a:hover,
 .text-wrapper__content a:focus { color: var(--clr-ruby-red); }
 
+.conversation {
+  font-size: 1rem; /* 16px */
+  line-height: 1.1em;
+}
+
+.conversation.conversation--rosaria { color: var(--clr-imperial-red); }
+.conversation.conversation--john { color: var(--clr-prussian-blue); }
+.conversation.conversation--brad { color: var(--clr-flame); }
+.conversation.conversation--valak { color: var(--clr-honey-yellow); }
+
+.conversation__name {
+  display: block;
+  margin-bottom: .1875em;
+}
+
+.conversation__dash::before { content: "—"; }
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(2 * var(--gap-10));
+}
+
 
 /**
  * Index page
  */
 
-.main-index {
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;

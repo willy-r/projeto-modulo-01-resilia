@@ -13,19 +13,17 @@
  * @param {string} secondPage A relative path to a page.
  */
 function redirectOnChoice(message, firstPage, secondPage) {
-  while (true) {
-    const response = Number(prompt(message));
+  let response;
 
-    if ([1, 2].includes(response)) {
-      if (response === 1) {
-        redirect(firstPage);
-      } else {
-        redirect(secondPage);
-      }
+  do {
+    response = Number(prompt(message));
 
-      break;
+    if (response === 1) {
+      redirect(firstPage);
+    } else if (response === 2) {
+      redirect(secondPage);
     }
-  }
+  } while (![1, 2].includes(response));
 }
 
 /**
@@ -67,6 +65,7 @@ function bodyContentFadeIn() {
   document.body.classList.add('fade-in');
 }
 
+/** Displays the nun gif on the credits page. */
 function displayNunImage() {
   const divCredits = document.querySelector('.text-wrapper#nun-img');
 

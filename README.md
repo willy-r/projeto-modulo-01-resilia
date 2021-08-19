@@ -35,9 +35,9 @@ O projeto tinha alguns requisitos como:
 
 O grupo era formado por:
 - [João Victor](https://github.com/jovimoura)
-- [Luciano Mendes]()
-- [Pedro Silva]()
-- [Tainara Costa]()
+- [Luciano Mendes](https://github.com/LuthGom)
+- [Pedro Silva](https://github.com/Pedro-jds)
+- [Tainara Costa](https://github.com/TaiCostaAlves)
 - [Thais Silveira](https://github.com/thaissilvr)
 - [William Rodrigues](https://github.com/willy-r)
 

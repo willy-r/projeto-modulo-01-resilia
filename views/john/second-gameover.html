@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon generated here: https://favicon.io/favicon-generator/ -->
+    <link rel="shortcut icon" href="../../assets/images/favicon-john.ico" type="image/x-icon">
+    
+    <title>John Form | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../style/responsive.css">
+
+    <!-- Local JS -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/john.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Você corre em direção de Brad, numa tentativa inútil de tentar parar o pior, e ele continua mirando para você, sorrindo
+            sarcasticamente e lavando a outra mão aos cabelos e puxando eles sem sentido algum. De repente o tiroteio começa e ele
+            não tem direção certa, mas parece mirar Rosaria que estava logo atrás de você se recuperando de seu desmaio.
+          </p>
+
+          <p class="conversation">
+            Você é atingido por vários tiros perdidos e Rosaria que já estava desnorteada também é atingida no processo.
+            <br>
+            Vocês morrem ali e uma risada ao fundo é ouvida, Valak estava ali, e ele venceu.
+          </p>
+          
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Vocês são fracos, não resistem à uma tentação de fazer burrada! Não perturbem o que não quer ser perturbado.
+            </span>
+          </p>
+          
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'second-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

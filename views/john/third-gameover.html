@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon generated here: https://favicon.io/favicon-generator/ -->
+    <link rel="shortcut icon" href="../../assets/images/favicon-john.ico" type="image/x-icon">
+    
+    <title>John Form | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../style/responsive.css">
+
+    <!-- Local JS -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/john.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Você tenta fazer o exorcismo nominal naquele ser, aproveitando o contratempo dele, porém nada acontece, você acha aquilo
+            estranho e não entende direito, era pra estar funcionando! Eis que o demônio olha em sua direção, após você ter chamado
+            ele pela primeira vez.
+          </p>
+
+          <p class="conversation">
+            A cara de sarcasmo estava estampada no rosto de Brad, que agora babava e lambeu a arma com uma língua anormal. Então o
+            ser mira em diretamente para você e começa a gargalhar enquanto disparava para todos os cantos mas principalmente para
+            você.
+          </p>
+
+          <p class="conversation">
+            Tiros o atingem e você acaba caindo, sua única reação é correr para Rosaria para tentar passar seus últimos momentos com
+            ela.
+          </p>
+
+          <p class="conversation conversation--john">
+            <strong class="conversation__name">[JOHN FORM]</strong>
+            <span class="conversation__dash">
+              Desculpe querida, acho que eu não sei soletrar muito bem, mas pelo menos morrerei ao seu lado.
+            </span>
+          </p>
+
+          <p class="conversation">
+            Rosaria sorri e ambos falecem no chão.
+          </p>
+
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Que piada, e esses são os melhores? Confundir meu nome com o do meu irmão assim? HAHAHAHAHAHA!
+            </span>
+          </p>
+
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'third-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

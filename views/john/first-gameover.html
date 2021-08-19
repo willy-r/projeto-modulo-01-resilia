@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon generated here: https://favicon.io/favicon-generator/ -->
+    <link rel="shortcut icon" href="../../assets/images/favicon-john.ico" type="image/x-icon">
+    
+    <title>John Form | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../style/responsive.css">
+
+    <!-- Local JS -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/john.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation conversation--john">
+            <strong class="conversation__name">[JOHN FORM]</strong>
+            <span class="conversation__dash">
+              Você pode se gabar o quanto quiser desta arma, mas ela não servirá para muita coisa no final das contas, o que não pode
+              ser atingido não morre assim tão facilmente! Você deveria reconsiderar e voltar para onde você veio, pensa numa férias
+              adiantadas, e se reclamarem com você pode pedir para me chamarem.
+            </span>
+          </p>
+
+          <p class="conversation conversation--brad">
+            <strong class="conversation__name">[BRAD HAMILTON]</strong>
+            <span class="conversation__dash">
+              Bom, sendo assim tudo bem, eu não queria estar por aqui mesmo, ainda mais nesse lamaçal e toda essa chuva. Até mais
+              senhor e senhora Form, foi um prazer conhecê-los.
+            </span>
+          </p>
+
+          <p class="conversation">
+            O casal Form ignorou o "senhor" e "senhora" e simplesmente abanaram a cabeça como que cumprimentando sem estar querendo.
+            No meio do caminho que Brad estava da viatura, você nota que a Rosaria que estava ao seu lado começa a ter uma espécie
+            de tonteira e se agarra a você para não cair, você já sabe o que pode ser e sem reação o pior acontece.
+          </p>
+
+          <p class="conversation">
+            Ela tenta falar algo mas de repente, um ser maligno totalmente bizarro vai em direção de Brad que estava de costas para
+            o mesmo, e do nada ele é jogado no chão contra a lama e perto de seu carro. Ele levante de uma forma totalmente bizarra,
+            retorcendo seus ossos e dando um 360° em torno de si mesmo. Ele puxa a .40 e mira Rosaria que está tonta e você
+            automaticamente tenta a cobrir com seu corpo.
+          </p>
+
+          <p class="conversation">
+            Sem pensar duas vezes o ser que Brad se tranformou atira várias vezes contra o casal, perfurando ambos e matando-os ali.
+            No fundo você escuta uma risada estridente e então tudo fica escuro.
+            <br>
+            Valak urge seu nome de uma forma bizarra e simplesmente some "levando" Brad junto.
+          </p>
+
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              HAHAHAHAHAHAHAHAHA!!!
+            </span>
+          </p>
+
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'first-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

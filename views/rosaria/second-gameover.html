@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rosaria Form | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/style.css">
+
+    <!-- Local JS -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/rosaria.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Você decide ficar ali, à espera de algo acontecer, você ainda está desnorteada com tudo e ainda se depara com um senhor
+            sentado cantarolando algo sem muito sentido. Você decide gritar por ele e nada, o senhor continua sua cantoria silábica.
+          </p>
+
+          <p class="conversation">
+            Você pisca e o senhor desaparece. Silêncio total. Você tenta olhar para outro canto da sala e automaticamente você se
+            depara com aquele senhor correndo com uma <strong>faca</strong> na mão em sua direção, mas o senhor está desfigurado e torto, suas
+            mãos estão maiores e seus braços e pernas também, um sorriso demoníaco escapa de sua boca com dentes afiados e antes o
+            que era uma cantoria suave com apenas três letras se transforma num grito sonoro de uma música: <q>Havia um homem torto,
+            ele comprou um gato torto, que pegou um rato torto e todos eles viveram em uma casinha torta<q>.
+          </p>
+
+          <p class="conversation">
+            Você tenta se afastar dele com pressa, mas sem muito sucesso, cada passo dele é o equivalente à 5 dos seus, ele chega em
+            você e enfia a faca em sua jugular, você sem muita reação tenta colocar a mão no riacho de sangue que sai dali mas sem
+            muito sucesso.
+          </p>
+
+          <p class="conversation">
+            A sua visão acaba e você está de volta a vida real, naquela casa, com o Brad possuído por algo mal e segurando uma faca
+            ensanguentada, John está desesperado e você não consegue reagir a mais nada.
+          </p>
+
+          <p class="conversation">
+            Você morre e então ouve uma voz ao fundo, meio rouca. Era Valak falando algo através de Brad.
+          </p>
+
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Às vezes os sonhos se tornam realidade, e o seu se tornou. Não é maravilhoso?
+            </span>
+          </p>
+
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'second-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

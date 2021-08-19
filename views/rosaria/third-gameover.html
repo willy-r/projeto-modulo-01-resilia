@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rosaria Form | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/style.css">
+
+    <!-- Local JS -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/rosaria.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <div class="container">
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation conversation--rosaria">
+            <strong class="conversation__name">[ROSARIA FORM]</strong>
+            <span class="conversation__dash">
+              Por mais arriscado que possa ser, eu acho que deveríamos nos separar. Assim poderemos achar o Brad mais rapidamente,
+              antes que seja tarde demais.
+            </span>
+          </p>
+
+          <p class="conversation conversation--john">
+            <strong class="conversation__name">[JOHN FORM]</strong>
+            <span class="conversation__dash">
+              Tudo bem, vamos nos separar, você vai por ali, e eu vou pelo lado que ele correu. E cuidado, por favor. Qualquer coisa
+              grita.
+            </span>
+          </p>
+
+          <p class="conversation">
+            Vocês se separam, John segue o lado oposto que você, você decide correr para tentar achar o mais rápido possível o Brad,
+            mas você não deixa de pensar se algo de ruim pode acontecer com John, você não se perdoaria.
+          </p>
+
+          <p class="conversation">
+            De repente, perdida no meio de seus pensamentos, você observa uma figura no final do corredor do cômodo da casa que você
+            estava correndo, ela estava de costas para você, e você reconheceu que era possivelmente o Brad. Ao mesmo tempo você
+            sentiu que algo não estava certo ali.
+          </p>
+
+          <p class="conversation">
+            Você se sentiu um pouco tonta e de repente Brad estava na sua frente, com o rosto totalmente deformado, como se tivessem
+            jogado água quente nele, parecia que derretia e os ossos estavam começando a aparecer. Ele segurava o que parecia ser
+            uma espécie de faca de cozinha, mas ela estava enferrujada, ele apontou a faca para você e você sem conseguir desviar
+            por conta da tontura acaba sendo atingida bem no estômago.
+          </p>
+
+          <p class="conversation">
+            A criatura continuou te apunhalando por pelo menos mais dez vezes e no final lambeu a faca com uma língua gigante e
+            sorriu.
+            <br>
+            Você sem reação faleceu e antes de tudo apagar se lembrou de John e da decisão de se separarem...
+          </p>
+
+          <p class="conversation conversation--valak">
+            <strong class="conversation__name">[VALAK]</strong>
+            <span class="conversation__dash">
+              Uma já foi, agora falta o outro... Ainda bem que eles se separaram, porque se não fosse por isso seria impossível
+              matá-los.
+            </span>
+          </p>
+          
+          <p class="gameover">
+            Game<br>over
+          </p>
+          <hr>
+          <div class="buttons">
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, 'third-phase.html');"
+            >
+              Jogar novamente
+            </button>
+            <button class="btn" type="button"
+              onclick="playAudio('../../assets/audios/evil-laugh.mp3');
+                       redirectAfterTimeout(5800, '../characters.html');"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

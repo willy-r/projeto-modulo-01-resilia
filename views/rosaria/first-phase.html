@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rosaria Form | Invocação do Mal: A Possessão de Valak</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/style.css">
+
+    <!-- Local JS -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/rosaria.js"></script>
+  </head>
+  <body onload="bodyContentFadeIn();">
+    <div class="container">
+      <header>
+        <h1 class="title">Fase 1</h1>
+      </header>
+      
+      <main class="center">
+        <section class="text-wrapper box">
+          <p class="conversation">
+            Em meio à chuva e a escuridão da noite, apenas amenizada pelo farol da viatura policial que parou ali havia alguns
+            minutos, você olhava para a casa, escrutinando o que quer que poderia estar ali, você sabia que tinha algo de ruim
+            naquele lugar. John Form estava ao seu lado, como sempre, seu companheiro de vida em todos os momentos, ele segurava um
+            guarda chuva enquanto eles ficavam ali quietos e observando a <q>casa demoníaca</q>.
+          </p>
+
+          <p class="conversation">
+            Eles já haviam notado a presença da viatura havia algum tempo, mas não faziam a menor ideia do que ou de quem poderia
+            ser, Padre Gordon não relatou nada sobre chamar pessoal local para ajudar no caso.
+          </p>
+
+          <p class="conversation conversation--rosaria">
+            <strong class="conversation__name">[ROSARIA FORM]</strong>
+            <span class="conversation__dash">
+              Quem poderia ser a essa hora rondando por aqui? <strong>Padre Gordon</strong> falou sobre companhias a mais? Ele sabe como isso pode ser
+              perigoso, não só para a gente, como também para pessoas com <strong>pouca fé</strong> que decidirem se envolver.
+            </span>
+          </p>
+
+          <p class="conversation conversation--john">
+            <strong class="conversation__name">[JOHN FORM]</strong>
+            <span class="conversation__dash">
+              Não faço a menor ideia querida, Padre Gordon não comentou nada sobre, será que deveríamos ver quem pode ser?
+            </span>
+          </p>
+          <hr>
+          <button class="btn" type="button"
+            onclick="handleRosariaFirstPhaseChoice();"
+          >
+            Faça sua escolha!
+          </button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

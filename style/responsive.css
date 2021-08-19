@@ -23,9 +23,14 @@
 
   .title.title--game { font-size: 1.5rem; /* 24px */ }
 
-  .box { gap: var(--gap-10); }
+  .box {
+    padding: .625rem;
+    gap: var(--gap-10);
+  }
 
   .gameover { font-size: 1.5rem; /* 24px */ }
+
+  .text-wrapper { width: 100%; }
 
   .text-wrapper__content { font-size: .75rem; /* 12px */ }
 

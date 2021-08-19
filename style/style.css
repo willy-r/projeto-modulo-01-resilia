@@ -46,7 +46,7 @@
   font-weight: 700;
   text-align: center;
   color: var(--clr-blood-red);
-  text-shadow: 0 0 2px var(--clr-white);
+  text-shadow: 0 0 .05em var(--clr-white);
 }
 
 .title.title--small { font-size: 1.25rem; /* 20px */ }

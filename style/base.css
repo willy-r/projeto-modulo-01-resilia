@@ -20,6 +20,8 @@
   --w-250: 15.625rem;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
   font-family: var(--ff-slabo-400);
   color: var(--clr-white);

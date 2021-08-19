@@ -1,0 +1,37 @@
+/**
+ * General styles to responsive.
+ * Breakpoints: 750px or less to tablet and some notebooks/cellphones
+ *              450px or less to cellphones
+ */
+
+/* 750px */
+@media (max-width: 46.875em) {
+  .box { padding: .9375rem; /* 15px */ }
+
+  .text-wrapper__content { font-size: .875rem; /* 14px */ }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .btn { font-size: 1rem; /* 16px */ }
+
+  .btn.btn--large { font-size: 1.25rem; /* 20px */ }
+
+  .title { font-size: 1.375rem; /* 22px */ }
+
+  .title.title--small { font-size: 1rem; /* 16px */ }
+
+  .title.title--game { font-size: 1.5rem; /* 24px */ }
+
+  .box { gap: var(--gap-10); }
+
+  .gameover { font-size: 1.5rem; /* 24px */ }
+
+  .text-wrapper__content { font-size: .75rem; /* 12px */ }
+
+  .chars-wrapper__content p { font-size: .75rem; /* 12px */ }
+
+  .conversation { font-size: .75rem; /* 12px */ }
+
+  .buttons { gap: var(--gap-10); }
+}

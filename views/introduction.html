@@ -16,12 +16,25 @@
     <link rel="stylesheet" href="../style/base.css">
     <link rel="stylesheet" href="../style/style.css">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/190e245c5e.js" crossorigin="anonymous"></script>
+
     <!-- Local JS -->
     <script src="../js/script.js"></script>
   </head>
-  <body onload="bodyContentFadeIn();">
+  <body onload="bodyContentFadeIn();
+                playAudio('../assets/audios/rain-sound.mp3', 0.2, true);"
+  >
     <div class="container">
-      <header>
+      <!-- This button will be fixed on top/right on the screen. -->
+      <button class="btn" id="btn-audio" type="button" data-audio="on"
+        onclick="toggleAudio();
+                 toggleAudioButtonIcon();"
+      >
+        <span class="fas fa-volume-up"></span>
+      </button>
+      
+      <header class="header">
         <h1 class="title">Enredo</h1>
       </header>
 

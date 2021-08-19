@@ -3,6 +3,7 @@
  */
 
  .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +33,12 @@
 }
 
 .btn.btn--large { font-size: 30px; }
+
+.btn#btn-audio {
+  position: fixed;
+  top: 1.5em;
+  right: 2em;
+}
 
 .title {
   padding-top: .125em;

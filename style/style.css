@@ -102,8 +102,7 @@
 
 .text-wrapper__content:first-child::first-letter {
   margin-right: .02em;
-  float: left;
-  font-size: 3em; /* 48px */
+  font-size: 2em; /* 32px */
   font-weight: 700;
 }
 

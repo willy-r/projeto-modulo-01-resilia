@@ -135,7 +135,16 @@
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: calc(2 * var(--gap-10));
+}
+
+.buttons__medias {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap-10);
 }
 
 
@@ -195,3 +204,5 @@
   display: flex;
   justify-content: center;
 }
+
+.w-100 { width: 100%; }

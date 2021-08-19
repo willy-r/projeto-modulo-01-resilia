@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="../style/base.css">
     <link rel="stylesheet" href="../style/style.css">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/190e245c5e.js" crossorigin="anonymous"></script>
+
     <!-- Local JS -->
     <script src="../js/script.js"></script>
   </head>
@@ -28,7 +31,7 @@
       <main class="center">
         <section class="text-wrapper box" id="nun-img">
           <p class="text-wrapper__content">
-            História totalmente fictícia retirada das profundezas da mente de <a href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank" rel="noreferrer noopener external">William Rodrigues</a>, baseada nos filmes da franquia <a href="https://pt.wikipedia.org/wiki/The_Conjuring" target="_blank" rel="noreferrer noopener external"><q>Invocação do Mal</q></a>.
+            História totalmente fictícia retirada das profundezas da mente de <a href="https://willy-r.github.io/portfolio-feliz/" target="_blank" rel="noreferrer noopener external">William Rodrigues</a>, baseada nos filmes da franquia <a href="https://pt.wikipedia.org/wiki/The_Conjuring" target="_blank" rel="noreferrer noopener external"><q>Invocação do Mal</q></a>.
           </p>
 
           <p class="text-wrapper__content">
@@ -39,13 +42,33 @@
             Site construído para fins didáticos, para o final do módulo 01 do curso de desenvolvimento web da Resilia, utilizando somente HTML, CSS e JavaScript.
           </p>
           <hr>
-          <button class="btn btn--large" type="button"
-            onclick="displayNunImage();
-                     playAudio('../assets/audios/the-nun-scream.mp3', 1);
-                     redirectAfterTimeout(3000, '../index.html');"
-          >
-            Jogar novamente
-          </button>
+          <div class="buttons w-100">
+            <button class="btn btn--large" type="button"
+              onclick="displayNunImage();
+                       playAudio('../assets/audios/the-nun-scream.mp3', 1);
+                       redirectAfterTimeout(3000, '../index.html');"
+            >
+              Jogar novamente
+            </button>
+
+            <ul class="buttons__medias">
+              <li>
+                <a class="btn" href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank" rel="noreferrer noopener external">
+                  <span class="fab fa-linkedin"></span>
+                </a>
+              </li>
+              <li>
+                <a class="btn" href="" target="_blank" rel="noreferrer noopener external">
+                  <span class="fab fa-github-square"></span>
+                </a>
+              </li>
+              <li>
+                <a class="btn" href="" target="_blank" rel="noreferrer noopener external">
+                  <span class="fab fa-twitter-square"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section> <!-- .text-wrapper -->
       </main>
     </div>

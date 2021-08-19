@@ -56,3 +56,5 @@ hr {
   margin: 0;
   border: none;
 }
+
+ul { list-style-type: none; }
